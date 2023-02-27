@@ -1,0 +1,124 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_dc521 && [1/2] Building C object CMakeFiles\cmTC_dc521.dir\src.c.obj
+FAILED: CMakeFiles/cmTC_dc521.dir/src.c.obj 
+C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_dc521.dir\src.c.obj /FdCMakeFiles\cmTC_dc521.dir\ /FS -c C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\src.c
+C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\src.c(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MICROS~1/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_06625 && ninja: error: unknown target 'cmTC_06625'
+
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_25536 && [1/2] Building C object CMakeFiles\cmTC_25536.dir\CheckFunctionExists.c.obj
+FAILED: CMakeFiles/cmTC_25536.dir/CheckFunctionExists.c.obj 
+C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_25536.dir\CheckFunctionExists.c.obj /FdCMakeFiles\cmTC_25536.dir\ /FS -c "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c: fatal error C1041: невозможно открыть базу данных программы C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_25536.dir\vc140.pdb; если несколько файлов CL.EXE осуществляют запись в один и тот же PDB-файл, воспользуйтесь /FS
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_71032 && [1/2] Building C object CMakeFiles\cmTC_71032.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_71032.exe
+FAILED: cmTC_71032.exe 
+cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_71032.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_71032.dir\CheckFunctionExists.c.obj  /out:cmTC_71032.exe /implib:cmTC_71032.lib /pdb:cmTC_71032.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_71032.dir\CheckFunctionExists.c.obj /out:cmTC_71032.exe /implib:cmTC_71032.lib /pdb:cmTC_71032.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_71032.dir/intermediate.manifest CMakeFiles\cmTC_71032.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: не удается открыть файл "pthread.lib"
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ec1a5 && ninja: error: unknown target 'cmTC_ec1a5'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC failed with the following output:
+Change Dir: C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MICROS~1/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_8e230 && [1/2] Building CXX object CMakeFiles\cmTC_8e230.dir\src.cxx.obj
+FAILED: CMakeFiles/cmTC_8e230.dir/src.cxx.obj 
+C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\cmTC_8e230.dir\src.cxx.obj /FdCMakeFiles\cmTC_8e230.dir\ /FS -c C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\src.cxx: fatal error C1041: невозможно открыть базу данных программы C:\Users\vanya\Desktop\Calculator\out\build\x64-debug\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_8e230.dir\vc140.pdb; если несколько файлов CL.EXE осуществляют запись в один и тот же PDB-файл, воспользуйтесь /FS
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}

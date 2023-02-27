@@ -1,0 +1,25 @@
+# ninja log v5
+2	1641	6991774514600558	build.ninja	a1e7c75110a3f70c
+8	711	6991774516475710	Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	711	6991774516475710	Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+8	711	6991774516475710	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	711	6991774516475710	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+739	3926	6991774549929624	Calculator/CMakeFiles/Calculator.dir/main.cpp.obj	bb7b2497121c7d7b
+718	3963	6991774550398414	Calculator/CMakeFiles/Calculator.dir/operations.cpp.obj	58d893d18aae40d9
+712	3976	6991774550554684	Calculator/CMakeFiles/Calculator.dir/Calculator_autogen/mocs_compilation.cpp.obj	5bb49b67d995e5f6
+723	3983	6991774550554684	Calculator/CMakeFiles/Calculator.dir/parser.cpp.obj	e8e15e95a3b8fcf1
+729	4006	6991774550710935	Calculator/CMakeFiles/Calculator.dir/calculator.cpp.obj	d7704ea80687bd31
+4006	4323	6991774553836172	Calculator/Calculator.exe	90ab4d6d07941fcd
+8	581	6991776818056755	Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	581	6991776818056755	Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+8	581	6991776818056755	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	581	6991776818056755	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+581	3689	6991776850569093	Calculator/CMakeFiles/Calculator.dir/Calculator_autogen/mocs_compilation.cpp.obj	5bb49b67d995e5f6
+597	3691	6991776850569093	Calculator/CMakeFiles/Calculator.dir/main.cpp.obj	bb7b2497121c7d7b
+592	3773	6991776851350406	Calculator/CMakeFiles/Calculator.dir/calculator.cpp.obj	d7704ea80687bd31
+8	213	6991776997226229	Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	213	6991776997226229	Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+8	213	6991776997226229	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/timestamp	964971fc6d38da04
+8	213	6991776997226229	C:/Users/vanya/Desktop/Calculator/out/build/x64-debug/Calculator/Calculator_autogen/mocs_compilation.cpp	964971fc6d38da04
+221	3120	6991777026294199	Calculator/CMakeFiles/Calculator.dir/operations.cpp.obj	58d893d18aae40d9
+3120	3309	6991777027860074	Calculator/Calculator.exe	90ab4d6d07941fcd

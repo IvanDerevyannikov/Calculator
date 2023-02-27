@@ -1,0 +1,94 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Calculator",
+					"jsonFile" : "directory-Calculator-Debug-75224be50ef0ef6bd46e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Calculator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Calculator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Calculator::@0f793c103ae9cca63ff0",
+					"jsonFile" : "target-Calculator-Debug-efda3620d44391348ecc.json",
+					"name" : "Calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Calculator_autogen::@0f793c103ae9cca63ff0",
+					"jsonFile" : "target-Calculator_autogen-Debug-e1c494d4d757c25b229c.json",
+					"name" : "Calculator_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Calculator_autogen_timestamp_deps::@0f793c103ae9cca63ff0",
+					"jsonFile" : "target-Calculator_autogen_timestamp_deps-Debug-910ce42a8e02d0b05df2.json",
+					"name" : "Calculator_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/vanya/Desktop/Calculator/out/build/x64-debug",
+		"source" : "C:/Users/vanya/Desktop/Calculator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
